@@ -642,10 +642,10 @@ body.nav-active { overflow: hidden; }
   position: fixed;
   background-color: var(--smoky-black-1);
   top: 0;
-  left: -360px;
-  bottom: 0;
-  max-width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: 360px;
   padding-inline: 30px;
   padding-block-end: 50px;
   overflow-y: auto;
@@ -653,6 +653,7 @@ body.nav-active { overflow: hidden; }
   z-index: 2;
   transition: var(--transition-2);
 }
+
 
 .navbar.active {
   visibility: visible;
